@@ -42,37 +42,6 @@ class UserTable extends Component {
 			search={true}
 			defaultCSS={true}
 		/>
-        {/* <ReactTable
-          data={userData}
-          columns={[
-            {
-              columns: [
-                {
-                  Header: "id",
-                  accessor: "id"
-                },
-                {
-                  Header: "Full Name",
-                  accessor: "fullName"
-                },
-                {
-                  Header: "Username",
-                  accessor: "username"
-                },
-                {
-                  Header: "Avatar",
-                  accessor: "avatar"
-                },
-                {
-                  Header: "Email address",
-                  accessor: "email"
-                }
-              ]
-            }
-          ]}
-          defaultPageSize={10}
-          className="-striped -highlight"
-        /> */}
       </div>
     );
   }
