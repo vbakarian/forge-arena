@@ -11,10 +11,10 @@ class UserTable extends Component {
     
   }
   componentDidMount() {
-    fetch("http://localhost:5000/getUsers")
+    fetch("/getUsers")
       .then(x => x.json())
       .then(response => {
-        // console.log(response);
+        console.log(response);
         this.setState({ userData: response });
       });
   }

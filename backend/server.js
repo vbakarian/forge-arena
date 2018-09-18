@@ -20,11 +20,6 @@ const app = express();
 
 app.use(cors());
 
-app.use(bodyParser.json());
-const object = {
-  name: "vako",
-  age: 24
-};
 
 app.get("/getUsers", (req, res) => {
   User.find({}, function(err, document) {
