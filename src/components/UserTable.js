@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "react-table/react-table.css";
 import SortableTbl from 'react-sort-search-table';
-
+import Navbar from "./Navbar.js"
 class UserTable extends Component {
   constructor() {
     super();
@@ -14,7 +14,6 @@ class UserTable extends Component {
     fetch("/getUsers")
       .then(x => x.json())
       .then(response => {
-        console.log(response);
         this.setState({ userData: response });
       });
   }
@@ -36,6 +35,7 @@ class UserTable extends Component {
 	];
     return (
       <div>
+        <Navbar/>
         <SortableTbl tblData={userData}
             tHead={tHead}
             dKey={col}
